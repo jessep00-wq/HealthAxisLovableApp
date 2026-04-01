@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dating Terms Court — Podcast Landing Page</title>
+    <meta
+      name="description"
+      content="Dating Terms Court is the podcast where internet dating behavior is put on trial. Vote the verdict and submit your own cases."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="hero">
+      <p class="kicker">Now in Session</p>
+      <h1>Dating Terms Court</h1>
+      <p class="subtitle">
+        The podcast where chaotic dating behavior gets a public verdict.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#episodes">Listen to Episodes</a>
+        <a class="btn btn-secondary" href="#submit">Submit a Case</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="about" class="panel">
+        <h2>What is this show?</h2>
+        <p>
+          Every week we investigate one modern dating term, hear the evidence,
+          and vote: <strong>Red Flag</strong>, <strong>Felony</strong>, or
+          <strong>Just Dumb</strong>.
+        </p>
+        <ul>
+          <li>New episodes every Thursday.</li>
+          <li>Audience verdict voting on featured cases.</li>
+          <li>Community-submitted terms reviewed live on stream.</li>
+        </ul>
+      </section>
+
+      <section id="episodes" class="panel">
+        <h2>Featured Episodes</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Love Bombing</h3>
+            <p>When too much too fast becomes evidence.</p>
+            <a href="#" aria-label="Listen to Love Bombing episode">Listen</a>
+          </article>
+          <article class="card">
+            <h3>Ghosting</h3>
+            <p>The case of the disappearing text thread.</p>
+            <a href="#" aria-label="Listen to Ghosting episode">Listen</a>
+          </article>
+          <article class="card">
+            <h3>Orbiting</h3>
+            <p>Watching every story, replying to none.</p>
+            <a href="#" aria-label="Listen to Orbiting episode">Listen</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="verdict" class="panel">
+        <h2>Cast this week’s verdict</h2>
+        <form class="vote-form" action="#" method="post">
+          <fieldset>
+            <legend>Current case: Breadcrumbing</legend>
+            <label><input type="radio" name="verdict" required /> Red Flag</label>
+            <label><input type="radio" name="verdict" /> Felony</label>
+            <label><input type="radio" name="verdict" /> Just Dumb</label>
+          </fieldset>
+          <button class="btn btn-primary" type="submit">Submit Vote</button>
+        </form>
+        <p class="note">
+          Demo UI only. Hook vote submission to your backend endpoint when integrating.
+        </p>
+      </section>
+
+      <section id="submit" class="panel">
+        <h2>Submit your case</h2>
+        <p>
+          Got a dating term that needs judgment? Send a term, definition, and
+          example for review.
+        </p>
+        <a class="btn btn-secondary" href="#">Open Submission Form</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Dating Terms Court</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
