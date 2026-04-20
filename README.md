@@ -2,16 +2,27 @@
 
 Internal Lovable app for workflows, memory, and admin systems.
 
-## Brand Voice Brief PDF template
+## Brand Voice Brief assets
 
-This repository includes a deterministic ReportLab script for generating a reusable Brand Voice Brief template for AI-assisted social writing workflows.
+This repository includes two implementation assets for a reusable Brand Voice Brief:
 
-### Generate the PDF
+1. `brand_voice_brief_template.py` — ReportLab generator for a PDF template.
+2. `artifacts/brand_voice_brief_template.md` — Markdown artifact template with explicit governance and human-review checkpoints.
+
+## Generate the PDF (when ReportLab is available)
 
 ```bash
 python3 brand_voice_brief_template.py
 ```
 
-The generated artifact is written to:
+Generated artifact:
 
 - `output/Brand_Voice_Brief_Template.pdf`
+
+## Use the markdown artifact directly
+
+If Python dependencies are unavailable in your environment, use:
+
+- `artifacts/brand_voice_brief_template.md`
+
+This path preserves deterministic structure and required review checkpoints for regulated workflows.
